@@ -43,7 +43,7 @@ namespace WineML
 
             Console.WriteLine("**** TRAIN AND EVALUATE MODEL WITH ALL FEATURES *****");
 
-            // Only for while testing / learning
+            // Only while testing / learning
             // Note: Both model training and validation are done by this method
             //TrainAndEvaluateTest(mlContext, trainingData, validationData);
 
@@ -54,7 +54,7 @@ namespace WineML
 
             Console.WriteLine("**** PREDICT QUALITY OF THE SELECTED WINE *****");
 
-            // Only for while testing / learning
+            // Only  while testing / learning
             // Note: The model training are done in this method
             /*PredictTest(mlContext, trainingData, new WineData
             {
@@ -106,7 +106,7 @@ namespace WineML
             return mlContext.Data.LoadFromTextFile<WineData>(dataPath, separatorChar: ';', hasHeader: true);
         }
 
-        // Only for while testing / learning
+        // Only while testing / learning
         // Testing: Showing the code of training directly - more clear to read but duplicate code !
         /*
         private static void TrainAndEvaluateTest(MLContext mlContext, IDataView trainingData, IDataView validationData)
@@ -133,7 +133,7 @@ namespace WineML
         }
         */
 
-        // Only for while testing / learning
+        // Only while testing / learning
         // Testing: Showing the code of training directly - more clear to read but duplicate code !
         /*
         private static void PredictTest(MLContext mlContext, IDataView trainingData, WineData wineData)
